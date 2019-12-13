@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Don't track myanimelist just a simulation-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ngnl"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/nogamenolife"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            android:src="@drawable/big" />
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/a"
+                android:src="@drawable/ic_sel"
+                android:tint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="3.7sp"
+                android:text="@string/title"
+                android:textColor="#ffffff"
+                android:textSize="17.3sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="15.4dp"
+            android:layout_marginTop="98.6dp"
+            android:layout_marginEnd="15.4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6.6sp"
+                android:text="@string/ngnl_story"
+                android:textColor="#ffff"
+                android:textSize="13.4sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.4dp"
+            android:layout_marginTop="224.7dp"
+            android:layout_marginEnd="15.4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="2.6sp"
+                android:text="@string/apr_9_2014"
+                android:textColor="#fefeff"
+                android:textSize="13.4sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="12dp"
+                    android:text="score"
+                    android:textColor="#fafaff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="6.3sp"
+                    android:text="8.34"
+                    android:textColor="#fafaff"
+                    android:textSize="30.7sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CV"
+        android:layout_marginStart="15.4dp"
+        android:layout_marginEnd="15.4dp"
+        android:layout_marginBottom="20dp"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="2.06sp"
+        android:text="@string/characters"
+        android:textColor="#fafaff"
+        android:textSize="13.4sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/CV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="245.9dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="0dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="22.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="Sora"
+                        android:textColor="#131314"
+                        android:textSize="16.2sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginEnd="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Abandoned by his parents, Sora is a brilliant NEET hik..."
+                        android:textColor="#8f8f8f"
+                        android:textSize="13.4sp" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        android:rating="4.5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sora" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="245.9dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="0dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="22.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="Shiro"
+                        android:textColor="#131314"
+                        android:textSize="16.2sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginEnd="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Shiro is an 11-year-old genius NEET, hikikomori gam..."
+                        android:textColor="#8f8f8f"
+                        android:textSize="13.4sp" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        android:rating="4.5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shiro" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="245.9dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="60dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                app:cardElevation="0dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="22.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="Stephanie Dola"
+                        android:textColor="#131314"
+                        android:textSize="16.2sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginEnd="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Stephanie is expressive and emotional to the point where she canno..."
+                        android:textColor="#8f8f8f"
+                        android:textSize="13.4sp" />
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginTop="10dp"
+                        android:numStars="5"
+                        android:rating="4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stephanie" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </HorizontalScrollView>
+</RelativeLayout>
